@@ -1,1 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maharashtra-Tourism-Webpage</title>
+    <link rel="stylesheet" href="searchbox.css" />
+    <link rel="stylesheet" href="banner-slider.css" />
+     <link rel="stylesheet" href="skill-section.css" />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+    :root {
+      --color-1: #4aff90;
+      --color-2: #545454;
+      --card-color1: rgb(0, 209, 0);
 
+      --card-color2: rgb(209, 209, 0);
+      --card-color3: rgb(0, 209, 129);
+      --card-color4: rgb(0, 96, 185);
+      --card-color5: rgb(209, 209, 0);
+      --card-color6: rgb(0, 209, 0);
+      --card-color7: rgb(0, 96, 185);
+      --card-color8: rgb(0, 209, 129);
+      --card-color9: rgb(209, 209, 0);
+      --card-color10: rgb(0, 209, 0);
+    }
+    nav {
+      height: 50px;
+      background-color: rgb(182, 182, 182);
+    }
+  </style>
+
+  <body>
+    <nav>(place for nav-bar)</nav>
+    <div class="slider-content">
+      <div class="searchbox">
+        <div class="search-input">
+          <a href="" target="_blank" hidden></a>
+          <input type="text" placeholder="Type to search places.." />
+          <div class="autocom-box">
+            <!-- here list are inserted from javascript -->
+          </div>
+          <div class="icon"><i class="fas fa-search"></i></div>
+        </div>
+      </div>
+
+      <div class="myslider_container">
+        <button
+          class="slidechange-btn left"
+          id="left_slider"
+          onclick="leftsliderbtn()"
+        >
+          <
+        </button>
+        <div class="slider_image">
+          <img src="c:\Users\Lenovo\Downloads\img-1.jpg" alt="" id="slider-images" />
+        </div>
+
+        <button
+          class="slidechange-btn right"
+          id="right_slider"
+          onclick="rightsliderbtn()"
+        >
+          >
+        </button>
+      </div>
+    </div>
+
+    <div class="outermost-card-container">
+      <div class="head0">JYOTIRLING</div>
+      <div class="card-container">
+        <div class="my-card reveal-left" id="card-1">
+          <img src="c:\Users\Lenovo\Downloads\Trimbakeshwar.jpg" alt="" id="card-image" />
