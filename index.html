@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<body lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maharashtra-Tourism-Webpage</title>
+    <link rel="stylesheet" href="searchbox.css" />
+    <link rel="stylesheet" href="banner-slider.css" />
+     <link rel="stylesheet" href="skill-section.css" />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+    :root {
+      --color-1: #4aff90;
+      --color-2: #545454;
+      --card-color1: rgb(0, 209, 0);
+
+      --card-color2: rgb(209, 209, 0);
+      --card-color3: rgb(0, 209, 129);
+      --card-color4: rgb(0, 96, 185);
+      --card-color5: rgb(209, 209, 0);
+      --card-color6: rgb(0, 209, 0);
+      --card-color7: rgb(0, 96, 185);
+      --card-color8: rgb(0, 209, 129);
+      --card-color9: rgb(209, 209, 0);
+      --card-color10: rgb(0, 209, 0);
+    }
+    nav {
+      height: 50px;
+      background-color: rgb(182, 182, 182);
+    }
+  </style>
+
+  <body>
+    <nav>(place for nav-bar)</nav>
+    <div class="slider-content">
+      <div class="searchbox">
+        <div class="search-input">
+          <a href="" target="_blank" hidden></a>
+          <input type="text" placeholder="Type to search places.." />
+          <div class="autocom-box">
+            <!-- here list are inserted from javascript -->
+          </div>
+          <div class="icon"><i class="fas fa-search"></i></div>
+        </div>
+      </div>
+
+      <div class="myslider_container">
+        <button
+          class="slidechange-btn left"
+          id="left_slider"
+          onclick="leftsliderbtn()"
+        >
+        
+        </button>
+        <div class="slider_image">
+          <img src="c:\Users\Lenovo\Downloads\slider-img1.jpg" alt="" id="slider-images" />
+        </div>
+
+        <button
+          class="slidechange-btn right"
+          id="right_slider"
+          onclick="rightsliderbtn()"
+        >
+          >
+        </button>
+      </div>
+    </div>
+
+    <div class="outermost-card-container">
+      <div class="head0">JYOTIRLING</div>
+      <div class="card-container">
+        <div class="my-card reveal-left" id="card-1">
+          <img src="c:\Users\Lenovo\Downloads\Trimbakeshwar.jpg" alt="" id="card-image" />
+          <hr />
+          <div class="card-data">
+            <div class="head1">Trimbakeshwar Jyotirlinga</div>
+            <div class="head2">
+               The Trimbakeshwar Temple is located at the source of the Godavari River in Trimbak, Nashik district, Maharashtra, is one of the prominent Jyotirlingas. It is known for its unique three-faced Lingam, symbolizing Lord Brahma, Lord Vishnu, and Lord Mahesh (Shiva).
+            </div>
+            <div class="head3">
+              <button>
+                <a href="http://www.youtube.com/" target="blank">See More</a>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="my-card reveal-up" id="card-2">
+          <img src="c:\Users\Lenovo\Downloads\bhimashankar.jpg" alt="" id="card-image" />
+          <hr />
+          <div class="card-data">
+            <div class="head1">Bhimashankar Jyotirlinga</div>
+            <div class="head2">
+                Bhimashankar Temple is a Hindu temple dedicated to Shiva situated in its eponymous village, Bhimashankar, in Pune district of Maharashtra. It is a key pilgrimage centre and contains one of the 12 Jyotirlingas. The temple's Shiva lingam is one of the five Jyotirlingas of Maharashtra. The mandir is situated on a mountain, 110 kilometers away from Pune.
+         </div>
+            <div class="head3">
+              <button>
+                <a href="http://www.youtube.com/" target="blank">See More</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="my-card reveal-right" id="card-3">
+          <img src="c:\Users\Lenovo\Downloads\Grishneshwar.jpg" alt="" id="card-image" />
+          <hr />
+          <div class="card-data">
+            <div class="head1">Grishneshwar Jyotirlinga</div>
+            <div class="head2">
+                Grishneshwar Jyotirlinga is a Hindu temple, dedicated to Shiva in Verul village of Chhatrapati Sambhajinagar, India. It is one of the 12 Jyotirlinga mandirs. The mandir is a national protected site, one and a half kilometers away from the Ellora Caves, 30 kilometres (19 miles) north-west of the city Aurangabad.
+            </div>
+            <div class="head3">
+              <button>
+                <a href="http://www.youtube.com/" target="blank">See More</a>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="my-card reveal-down" id="card-4">
+          <img src="c:\Users\Lenovo\Downloads\nagnath.jpeg" alt="" id="card-image" />
+          <hr />
+          <div class="card-data">
+            <div class="head1">Nagnath Jyotirlinga</div>
+            <div class="head2">
+                Aundha Nagnath Temple is an ancient Shiva temple and one of the twelve Jyotirlingas in Maharashtra's Hingoli district. It is believed that Yudhishthira originally built this temple. The current structure dates back to the 13th century, built by the Seuna (Yadava) dynasty.
+            </div>
+            <div class="head3">
+              <button>
+                <a href="http://www.youtube.com/" target="blank">See More</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="outermost-card-container">
+      <div class="head0">OTHER IMPORTANT PLACES TO VISIT</div>
+      <div class="card-container">
+        <div class="my-card reveal-left" id="card-5">
+          <img src="c:\Users\Lenovo\Downloads\Mumbai.jpg" alt="" id="card-image" />
+          <hr />
+          <div class="card-data">
+            <div class="head1">Mumbai</div>
+            <div class="head2">
+              Mumbai is the capital of Maharashtra, India's
+              most populated city. Mumbai's rich history makes it home to
+              three UNESCO World Heritage sites, including Elephanta Caves,
+              the Victorian and Art Deco Ensemble, and Chhatrapati Shivaji
+              Maharaj Terminus, and many more visiting places.
+            </div>
+            <div class="head3">
+              <button>
+                <a href="http://www.youtube.com/" target="blank">See More</a>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="my-card reveal-up" id="card-6">
+          <img src="c:\Users\Lenovo\Downloads\Matheran.jpg" alt="" id="card-image" />
+          <hr />
+          <div class="card-data">
+            <div class="head1">Matheran</div>
+            <div class="head2">
+              Matheran, a hill station in the state of Maharashtra. The mighty
+              Western Ghats of sahyadri mountain ranges are what make Matheran.
+              Matheran's Toy Train is one among the historic Mountain Railways
+              of the country. its salubrious climate, its view points and trekking
+              trails.
+            </div>
+            <div class="head3">
+              <button>
+                <a href="http://www.youtube.com/" target="blank">See More</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="my-card reveal-right" id="card-7">
+          <img src="c:\Users\Lenovo\Downloads\Khandala.jpg" alt="" id="card-image" />
+          <hr />
+          <div class="card-data">
+            <div class="head1">Khandala</div>
+            <div class="head2">
+              Khandala is a hill station in the Western Ghat mountains of
+              Maharashtra. it's home to vantage spots including Sunset points
+              and Rajmachi point, with views of Rajmachi Fort. Kune Falls
+              is a 3-tiered waterfall set in a dramatic valley. 
+            </div>
+            <div class="head3">
+              <button>
+                <a href="http://www.youtube.com/" target="blank">See More</a>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="my-card reveal-down" id="card-8">
+          <img src="c:\Users\Lenovo\Downloads\Lavasa.jpg" alt="" id="card-image" />
+          <hr />
+          <div class="card-data">
+            <div class="head1">Lavasa</div>
+            <div class="head2">
+              lavasa is a private planned city in the state of Maharashtra in
+              india built near Pune. it is stylistically based on the Italian
+              town Portfolio, with a street and several buildings bearing 
+              the name of that town.
+            </div>
+            <div class="head3">
+              <button>
+                <a href="http://www.youtube.com/" target="blank">See More</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="my-card reveal-down" id="card-9">
+          <img src="c:\Users\Lenovo\Downloads\Kokan.jpg" alt="" id="card-image" />
+          <hr />
+          <div class="card-data">
+            <div class="head1">Konkan</div>
+            <div class="head2">
+              The Konkan is a stretch of land by the western coast of india,
+              bound by the river Daman Ganga at Damaon in the north, to Anjediva
+              island next to karwar town in the south, with the Arabian Sea to 
+              the west and the Deccan plateau to the east.
+            </div>
+            <div class="head3">
+              <button>
+                <a href="http://www.youtube.com/" target="blank">See More</a>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="my-card reveal-down" id="card-10">
+          <img src="c:\Users\Lenovo\Downloads\Malshej Ghat.jpeg" alt="" id="card-image" />
+          <hr />
+          <div class="card-data">
+            <div class="head1">Malshej Ghat</div>
+            <div class="head2">
+                Malshej Ghat is a mountain pass and a popular hill station,
+                nestled in the Western Ghats of Maharashtra. With its numerous
+                lakes, waterfalls, mountains, and verdant flora and fauna,
+                Malshej Ghat is popular among hikers, trekkers and nature lovers.
+            </div>
+            <div class="head3">
+              <button>
+                <a href="http://www.youtube.com/" target="blank">See More</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="my-card reveal-down" id="card-11">
+          <img src="c:\Users\Lenovo\Downloads\Elephanta Caves.jpg" alt="" id="card-image" />
+          <hr />
+          <div class="card-data">
+            <div class="head1">Elephanta Caves</div>
+            <div class="head2">
+                The Elephanta Caves are a collection of cave temples
+                predominantly dedicated to the Hindu god Shiva, which
+                have been designated a UNESCO World Heritage Site.
+                They are on Elephanta Island, or Gharapuri (literally
+                 meaning "the city of caves").
+            </div>
+            <div class="head3">
+              <button>
+                <a href="http://www.youtube.com/" target="blank">See More</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="banner-searchbox-suggestions.js"></script>
+  <script src="randomcolor.js"></script>
+
+  <script>
+    const slideImages = [
+      "c:\Users\Lenovo\Downloads\slider-img1.jpg",
+      "c:\Users\Lenovo\Downloads\slider-img2.jpeg",
+      "c:\Users\Lenovo\Downloads\slider-img3.jpg",
+      "c:\Users\Lenovo\Downloads\slider-img4.jpeg",
+      "c:\Users\Lenovo\Downloads\slider-img5.jpg",
+      "c:\Users\Lenovo\Downloads\slider-img6.jpeg",
+      "c:\Users\Lenovo\Downloads\slider-img7.jpeg",
+      "c:\Users\Lenovo\Downloads\slider-img8.jpg",
+      "c:\Users\Lenovo\Downloads\slider-img9.jpg",
+    ];
+    
+    let currentIndex = 0;
+
+    const sliderImageElement = document.getElementById("slider-imgage");
+    const leftsliderButton = document.getElementByID("left-slider");
+    const rightsliderButton = document.getElementByID("right-slider");
+
+    function updateSliderImage() {
+      sliderImageElement.src = slideImages[currentIndex]; 
+    }
+
+    function moveToNextSlide() {
+      currentIndex = (currentIndex + 1) % slideImages.length;
+      updateSliderImage();
+    }
+
+    function moveToPreviousSlide() {
+      currentIndex = (currentIndex - 1 + slideImages.length) % slideImages.length
+      updateSliderImage();
+    }
+
+    // Event listeners for slider buttons
+    leftSliderButton.addEventListener("click", moveToPreviousSlide);
+    rightSliderButton.addEventListener("click", moveToNextSlide);
+
+    // Auto-slider every 3 seconds
+    setInterval(moveToNextSlide, 3000);
+    </script>
+    </body>
+    </html>
